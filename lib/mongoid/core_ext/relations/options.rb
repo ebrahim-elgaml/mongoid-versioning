@@ -1,7 +1,7 @@
 module Mongoid
   module Relations
     module Options
-      COMMON << :versioned
+      COMMON += [:versioned]
     end
   end
 end
