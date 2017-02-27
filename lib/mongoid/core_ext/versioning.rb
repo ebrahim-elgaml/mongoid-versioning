@@ -137,7 +137,7 @@ module Mongoid
       options = respond_to?(:mongo_client) ?
         mongo_client.options.symbolize_keys :
         mongo_session.options
-
+      puts "*************************OPTIONS #{options}"
       _loading_revision do
         self.class.unscoped
           .with(options)
